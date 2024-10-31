@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../css/components/about.css"],
+  "sourcesContent": ["\nsection {\n    padding: 2rem;\n    text-align: center;\n}\n"],
+  "mappings": "AACA,QADA,QAEa,KACT,WAAY,MAChB",
+  "names": []
+}

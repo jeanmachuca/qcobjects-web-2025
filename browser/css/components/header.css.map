@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../css/components/header.css"],
+  "sourcesContent": ["\nheader {\n    background-color: #1f1f1f;\n    padding: 1rem;\n}\nnav ul {\n    list-style: none;\n    display: flex;\n    justify-content: space-around;\n    padding: 0;\n}\n\nnav ul li {\n    margin: 0 1rem;\n}\n\nnav ul li a {\n    color: #ffffff;\n    text-decoration: none;\n    font-weight: bold;\n}\n\n@media (max-width: 768px) {\n    nav ul {\n        flex-direction: column;\n    }\n}\n"],
+  "mappings": "AACA,OACI,iBAAkB,QAFtB,QAGa,IACb,CACA,IAAI,GACA,WAAY,KACZ,QAAS,KACT,gBAAiB,aARrB,QASa,CACb,CAEA,IAAI,GAAG,GAZP,OAaY,EAAE,IACd,CAEA,IAAI,GAAG,GAAG,EACN,MAAO,KACP,gBAAiB,KACjB,YAAa,GACjB,CAEA,OAAO,CAAC,SAAS,EAAE,OACf,IAAI,GACA,eAAgB,MACpB,CACJ",
+  "names": []
+}

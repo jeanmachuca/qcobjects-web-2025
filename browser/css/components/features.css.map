@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../css/components/features.css"],
+  "sourcesContent": ["section {\n    padding: 2rem;\n    text-align: center;\n}\n"],
+  "mappings": "AAAA,gBACa,KACT,WAAY,MAChB",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../css/styles.css"],
+  "sourcesContent": ["/* styles.css */\nbody {\n    font-family: 'Arial', sans-serif;\n    margin: 0;\n    padding: 0;\n    background-color: #121212;\n    color: #ffffff;\n}\n\nsection {\n    padding: 2rem;\n    text-align: center;\n}\n\n\nh1, h2 {\n    color: #ff9800;\n}\n\nfooter {\n    background-color: #1f1f1f;\n    text-align: center;\n    padding: 1rem;\n    position: fixed;\n    width: 100%;\n    bottom: 0;\n}\n\n@media (max-width: 768px) {\n    nav ul {\n        flex-direction: column;\n    }\n}\n\n"],
+  "mappings": "AACA,KACI,YAAa,KAAO,CAAE,WAF1B,OAGY,EAHZ,QAIa,EACT,iBAAkB,QAClB,MAAO,IACX,CAEA,QATA,QAUa,KACT,WAAY,MAChB,CAGA,GAAI,GACA,MAAO,OACX,CAEA,OACI,iBAAkB,QAClB,WAAY,OArBhB,QAsBa,KACT,SAAU,MACV,MAAO,KACP,OAAQ,CACZ,CAEA,OAAO,CAAC,SAAS,EAAE,OACf,IAAI,GACA,eAAgB,MACpB,CACJ",
+  "names": []
+}

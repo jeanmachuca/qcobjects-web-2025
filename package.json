@@ -1,0 +1,13 @@
+{
+  "name": "qcobjects-web-2025",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "minify:css": "(npx -y esbuild css/*.css css/**/*.css --outdir=browser/css --keep-names --minify --global-name=global --sourcemap --loader:.svg=file --target=es2021)",
+    "build:browser": "mkdir -p browser && npm run minify:css && cp ./index.html browser/index.html && cp -Rf templates/ browser/templates/ && npx -y esbuild@0.17.19 js/*.js --bundle --outdir=browser/js --keep-names --minify --global-name=global --sourcemap --splitting --chunk-names=chunks/[name]-[hash] --format=esm --target=es2021"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
