@@ -1,0 +1,9 @@
+/* tailwind.css */
+@import url("./../tailwind.css");
+@import url("./../theme.css");
+
+section.contact-us {
+    padding: var(--contact-us-padding, 2rem);
+    text-align: var(--contact-us-text-align, center);
+    padding-bottom: var(--contact-us-padding-bottom, 100px);
+}

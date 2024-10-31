@@ -1,2 +1,2 @@
-section{padding:2rem;text-align:center}
+@import"./../tailwind.css";@import"./../theme.css";section{padding:var(--section-padding, 2rem);text-align:var(--section-text-align, center)}
 /*# sourceMappingURL=features.css.map */

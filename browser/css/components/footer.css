@@ -1,2 +1,2 @@
-section{padding:2rem;text-align:center}footer{background-color:#1f1f1f;text-align:center;padding:1rem;position:fixed;width:100%;bottom:0}
+@import"./../tailwind.css";@import"./../theme.css";section{padding:var(--section-padding, 2rem);text-align:var(--section-text-align, center)}footer{background-color:var(--footer-background-color, #1f1f1f);text-align:var(--footer-text-align, center);padding:var(--footer-padding, 1rem);position:var(--footer-position, fixed);width:var(--footer-width, 100%);bottom:var(--footer-bottom, 0)}
 /*# sourceMappingURL=footer.css.map */

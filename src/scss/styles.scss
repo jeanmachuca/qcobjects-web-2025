@@ -1,0 +1,33 @@
+@import url("./tailwind.css");
+@import url("./theme.css");
+body {
+    font-family: var(--body-font-family, 'Arial', sans-serif);
+    margin: var(--body-margin, 0);
+    padding: var(--body-padding, 0);
+    background-color: var(--body-background-color, #121212);
+    color: var(--body-color, #ffffff);
+}
+
+section {
+    padding: var(--section-padding, 2rem);
+    text-align: var(--section-text-align, center);
+}
+
+h1, h2 {
+    color: var(--heading-color, #ff9800);
+}
+
+footer {
+    background-color: var(--footer-background-color, #1f1f1f);
+    text-align: var(--footer-text-align, center);
+    padding: var(--footer-padding, 1rem);
+    position: var(--footer-position, fixed);
+    width: var(--footer-width, 100%);
+    bottom: var(--footer-bottom, 0);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: var(--nav-ul-flex-direction-mobile, column);
+    }
+}

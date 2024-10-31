@@ -1,0 +1,9 @@
+/* tailwind.css */
+@import url("./../tailwind.css");
+@import url("./../theme.css");
+section {
+  padding: var(--section-padding, 2rem);
+  text-align: var(--section-text-align, center);
+}
+
+/*# sourceMappingURL=about.css.map */

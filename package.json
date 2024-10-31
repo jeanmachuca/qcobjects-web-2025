@@ -2,12 +2,38 @@
   "name": "qcobjects-web-2025",
   "version": "1.0.0",
   "main": "index.js",
+  "watch": {
+    "start": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "ts,html,css",
+      "quiet": true,
+      "legacyWatch": true,
+      "delay": 2500,
+      "runOnChangeOnly": false
+    }
+  },
   "scripts": {
-    "minify:css": "(npx -y esbuild css/*.css css/**/*.css --outdir=browser/css --keep-names --minify --global-name=global --sourcemap --loader:.svg=file --target=es2021)",
-    "build:browser": "mkdir -p browser && npm run minify:css && cp ./index.html browser/index.html && cp -Rf templates/ browser/templates/ && npx -y esbuild@0.17.19 js/*.js --bundle --outdir=browser/js --keep-names --minify --global-name=global --sourcemap --splitting --chunk-names=chunks/[name]-[hash] --format=esm --target=es2021"
+    "build:sass":"npx sass src/scss:src/css",
+    "build:tailwind": "npx tailwindcss -i ./src/css/tailwind-source.css -o ./src/css/tailwind.css",
+    "minify:css": "(npx -y esbuild src/css/*.css src/css/**/*.css --outdir=browser/css --keep-names --minify --global-name=global --sourcemap --loader:.svg=file --target=es2021)",
+    "build:browser": "npm run build:sass && npm run build:tailwind && mkdir -p browser && npm run minify:css && cp ./src/index.html browser/index.html && cp -Rf src/templates/ browser/templates/ && cp -Rf src/img/ browser/img/ && npx -y esbuild@0.17.19 src/js/*.js --bundle --outdir=browser/js --keep-names --minify --global-name=global --sourcemap --splitting --chunk-names=chunks/[name]-[hash] --format=esm --target=es2021",
+    "build": "npm run build:browser",
+    "build:dev": "npm-watch build",
+    "start:dev": "npm-watch start",
+    "start": "npm run build && qcobjects-http-server"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": ""
+  "license": "LGPL-3.0-or-later",
+  "description": "",
+  "devDependencies": {
+    "npm-watch": "^0.13.0",
+    "sass": "^1.80.5",
+    "tailwindcss": "^3.4.14"
+  },
+  "dependencies": {
+    "qcobjects": "^2.4.99"
+  }
 }

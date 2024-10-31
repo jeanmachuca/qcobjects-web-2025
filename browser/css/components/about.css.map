@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "sources": ["../../../css/components/about.css"],
-  "sourcesContent": ["\nsection {\n    padding: 2rem;\n    text-align: center;\n}\n"],
-  "mappings": "AACA,QADA,QAEa,KACT,WAAY,MAChB",
+  "sources": ["../../../src/scss/components/about.scss"],
+  "sourcesContent": ["/* tailwind.css */\n@import url(\"./../tailwind.css\");\n@import url(\"./../theme.css\");\n\nsection {\n    padding: var(--section-padding, 2rem);\n    text-align: var(--section-text-align, center);\n}\n"],
+  "mappings": "mDAIA,QACI,QAAA,IAAA,iBAAA,EAAA,MACA,WAAA,IAAA,oBAAA,EAAA",
   "names": []
 }

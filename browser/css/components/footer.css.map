@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "sources": ["../../../css/components/footer.css"],
-  "sourcesContent": ["section {\n    padding: 2rem;\n    text-align: center;\n}\nfooter {\n    background-color: #1f1f1f;\n    text-align: center;\n    padding: 1rem;\n    position: fixed;\n    width: 100%;\n    bottom: 0;\n}"],
-  "mappings": "AAAA,gBACa,KACT,WAAY,MAChB,CACA,OACI,iBAAkB,QAClB,WAAY,OANhB,QAOa,KACT,SAAU,MACV,MAAO,KACP,OAAQ,CACZ",
+  "sources": ["../../../src/scss/components/footer.scss"],
+  "sourcesContent": ["@import url(\"./../tailwind.css\");\n@import url(\"./../theme.css\");\n\nsection {\n    padding: var(--section-padding, 2rem);\n    text-align: var(--section-text-align, center);\n}\nfooter {\n    background-color: var(--footer-background-color, #1f1f1f);\n    text-align: var(--footer-text-align, center);\n    padding: var(--footer-padding, 1rem);\n    position: var(--footer-position, fixed);\n    width: var(--footer-width, 100%);\n    bottom: var(--footer-bottom, 0);\n}"],
+  "mappings": "mDAGA,QACI,QAAA,IAAA,iBAAA,EAAA,MACA,WAAA,IAAA,oBAAA,EAAA,QAEJ,OACI,iBAAA,IAAA,yBAAA,EAAA,SACA,WAAA,IAAA,mBAAA,EAAA,QACA,QAAA,IAAA,gBAAA,EAAA,MACA,SAAA,IAAA,iBAAA,EAAA,OACA,MAAA,IAAA,cAAA,EAAA,MACA,OAAA,IAAA,eAAA,EAAA",
   "names": []
 }
