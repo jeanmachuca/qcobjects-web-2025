@@ -24,7 +24,6 @@
     "start:dev": "npm-watch start",
     "start": "npm run build && qcobjects-http-server"
   },
-  "keywords": [],
   "author": "Jean Machuca <correojean@gmail.com>",
   "license": "LGPL-3.0-or-later",
   "description": "",
@@ -35,5 +34,11 @@
   },
   "dependencies": {
     "qcobjects": "^2.4.99"
-  }
+  },
+  "keywords": [
+    "qcobjects",
+    "newapp",
+    "js",
+    "javascript"
+]
 }
