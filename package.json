@@ -2,6 +2,7 @@
   "name": "qcobjects-web-2025",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "watch": {
     "start": {
       "patterns": [
