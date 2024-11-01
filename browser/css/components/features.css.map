@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../../src/scss/components/features.scss"],
-  "sourcesContent": ["@import url(\"./../tailwind.css\");\n@import url(\"./../theme.css\");\n\nsection {\n    padding: var(--section-padding, 2rem);\n    text-align: var(--section-text-align, center);\n}\n"],
-  "mappings": "mDAGA,QACI,QAAA,IAAA,iBAAA,EAAA,MACA,WAAA,IAAA,oBAAA,EAAA",
+  "sourcesContent": ["/* src/scss/components/features.scss */\n@import url(\"./../tailwind.css\");\n@import url(\"./../theme.css\");\n\nsection {\n    padding: var(--section-padding, 2rem);\n    text-align: var(--section-text-align, center);\n}\n"],
+  "mappings": "mDAIA,QACI,QAAA,IAAA,iBAAA,EAAA,MACA,WAAA,IAAA,oBAAA,EAAA",
   "names": []
 }

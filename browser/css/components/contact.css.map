@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../../src/scss/components/contact.scss"],
-  "sourcesContent": ["/* tailwind.css */\n@import url(\"./../tailwind.css\");\n@import url(\"./../theme.css\");\n\nsection.contact-us {\n    padding: var(--contact-us-padding, 2rem);\n    text-align: var(--contact-us-text-align, center);\n    padding-bottom: var(--contact-us-padding-bottom, 100px);\n}"],
+  "sourcesContent": ["/* src/scss/components/contact.scss */\n@import url(\"./../tailwind.css\");\n@import url(\"./../theme.css\");\n\nsection.contact-us {\n    padding: var(--contact-us-padding, 2rem);\n    text-align: var(--contact-us-text-align, center);\n    padding-bottom: var(--contact-us-padding-bottom, 100px);\n}"],
   "mappings": "mDAIA,OAAA,CAAA,WACI,QAAA,IAAA,oBAAA,EAAA,MACA,WAAA,IAAA,uBAAA,EAAA,QACA,eAAA,IAAA,2BAAA,EAAA",
   "names": []
 }
