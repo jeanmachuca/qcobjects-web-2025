@@ -1,6 +1,6 @@
 import * as QCObjects from "qcobjects";
 import "./components/nav";
-
+import "./components/mainTransitionEffect";
 RegisterWidgets("header-component", "home-component", 
     "features-component", "about-component", 
     "contact-component", "footer-component");

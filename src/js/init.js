@@ -5268,7 +5268,7 @@ var require_QCObjects = __commonJS({
           if (className !== null && className.indexOf(".") > -1) {
             var packageName = className.split(".").slice(0, className.split(".").length - 1).join(".");
             var _className = className.split(".").slice(-1).join("");
-            var _package = Package2(packageName);
+            var _package = Package3(packageName);
             var packageClasses = typeof _package !== "undefined" ? _package.filter((classFactory) => {
               return isQCObjects_Class(classFactory) && (classFactory.__definition.__classType === _className || typeof classFactory === "function" && !!classFactory.name);
             }).reverse() : [];
@@ -5620,7 +5620,7 @@ var require_QCObjects = __commonJS({
         var isQCObjects_Class = /* @__PURE__ */ __name(function(_) {
           return typeof _ === "function" && !_.__instanceID && !!_.__definition && typeof _.__definition !== "undefined" && !!_.__definition.__classType ? true : false;
         }, "isQCObjects_Class");
-        var Package2 = /* @__PURE__ */ __name(function(namespace, classes) {
+        var Package3 = /* @__PURE__ */ __name(function(namespace, classes) {
           if (_QC_PACKAGES.hasOwnProperty.call(_QC_PACKAGES, namespace) && typeof _QC_PACKAGES[namespace] !== "undefined" && _QC_PACKAGES[namespace].hasOwnProperty.call(_QC_PACKAGES[namespace], "length") && _QC_PACKAGES[namespace].length > 0 && typeof classes !== "undefined" && classes.hasOwnProperty.call(classes, "length") && classes.length > 0) {
             classes.filter(
               function(_c1) {
@@ -5654,12 +5654,12 @@ var require_QCObjects = __commonJS({
           }
           return Object.hasOwnProperty.call(_QC_PACKAGES, namespace) ? _QC_PACKAGES[namespace] : void 0;
         }, "Package");
-        Package2.prototype.toString = function() {
+        Package3.prototype.toString = function() {
           return "Package(namespace, classes) { [QCObjects native code] }";
         };
-        Package2("com.qcobjects", [Processor]);
+        Package3("com.qcobjects", [Processor]);
         var NamespaceRef = /* @__PURE__ */ __name(function(namespace) {
-          let packageInstance = Package2(namespace);
+          let packageInstance = Package3(namespace);
           let classes = packageInstance.filter((c) => isQCObjects_Class(c)).map((c) => {
             return {
               [c.__definition.__classType]: c
@@ -6038,7 +6038,7 @@ var require_QCObjects = __commonJS({
             "TPL_SOURCE": tplsource
           });
           if (_top.CONFIG.get("preserveComponentBodyTag")) {
-            Package2(_componentName !== "" ? "com.qcobjects.components." + _componentName : "com.qcobjects.components", [
+            Package3(_componentName !== "" ? "com.qcobjects.components." + _componentName : "com.qcobjects.components", [
               Class("ComponentBody", ClassFactory("Component"), {
                 name: _componentName,
                 tplsource,
@@ -6087,7 +6087,7 @@ var require_QCObjects = __commonJS({
           }
           return componentsBuiltWith;
         }, "_buildComponentsFromElements_");
-        Package2("com.qcobjects", [
+        Package3("com.qcobjects", [
           /* @__PURE__ */ __name(class Component extends ClassFactory("InheritClass") {
             constructor({
               __parent__,
@@ -7018,7 +7018,7 @@ var require_QCObjects = __commonJS({
             ClassFactory("Component").route();
           });
         }
-        Package2("com.qcobjects.controllers", [
+        Package3("com.qcobjects.controllers", [
           /* @__PURE__ */ __name(class Controller extends ClassFactory("InheritClass") {
             constructor({
               component,
@@ -7078,7 +7078,7 @@ var require_QCObjects = __commonJS({
             }
           }, "Controller")
         ]);
-        Package2("com.qcobjects.views", [
+        Package3("com.qcobjects.views", [
           /* @__PURE__ */ __name(class View extends ClassFactory("InheritClass") {
             constructor({ component = void 0, dependencies = [] }) {
               super(...arguments);
@@ -7088,7 +7088,7 @@ var require_QCObjects = __commonJS({
             }
           }, "View")
         ]);
-        Package2("com.qcobjects.api", [
+        Package3("com.qcobjects.api", [
           /* @__PURE__ */ __name(class Service extends ClassFactory("InheritClass") {
             constructor() {
               super(...arguments);
@@ -7110,7 +7110,7 @@ var require_QCObjects = __commonJS({
             }
           }, "Service")
         ]);
-        Package2("com.qcobjects.api.services", [
+        Package3("com.qcobjects.api.services", [
           /* @__PURE__ */ __name(class JSONService extends ClassFactory("Service") {
             constructor() {
               super(...arguments);
@@ -7129,7 +7129,7 @@ var require_QCObjects = __commonJS({
             }
           }, "JSONService")
         ]);
-        Package2("com.qcobjects.api.config", [
+        Package3("com.qcobjects.api.config", [
           /* @__PURE__ */ __name(class ConfigService extends ClassFactory("JSONService") {
             constructor() {
               super(...arguments);
@@ -7160,7 +7160,7 @@ var require_QCObjects = __commonJS({
             }
           }, "ConfigService")
         ]);
-        Package2("com.qcobjects.valueObjects", [
+        Package3("com.qcobjects.valueObjects", [
           /* @__PURE__ */ __name(class VO extends ClassFactory("InheritClass") {
             constructor() {
               super(...arguments);
@@ -7731,7 +7731,7 @@ var require_QCObjects = __commonJS({
         } else {
         }
         if (!isBrowser) {
-          Package2("com.qcobjects.api", [
+          Package3("com.qcobjects.api", [
             /* @__PURE__ */ __name(class BackendMicroservice extends ClassFactory("InheritClass") {
               constructor({
                 domain = _domain_,
@@ -8231,7 +8231,7 @@ var require_QCObjects = __commonJS({
             });
           }
         });
-        Package2("com.qcobjects.effects.base", [
+        Package3("com.qcobjects.effects.base", [
           /* @__PURE__ */ __name(class Effect extends ClassFactory("InheritClass") {
             constructor() {
               super(...arguments);
@@ -8260,7 +8260,7 @@ var require_QCObjects = __commonJS({
             }
           }, "Effect")
         ]);
-        Package2("com.qcobjects.effects.transitions.base", [
+        Package3("com.qcobjects.effects.transitions.base", [
           /* @__PURE__ */ __name(class TransitionEffect extends ClassFactory("Effect") {
             constructor() {
               super(...arguments);
@@ -8320,7 +8320,7 @@ var require_QCObjects = __commonJS({
             }
           }, "TransitionEffect")
         ]);
-        Package2("com.qcobjects.timing", [
+        Package3("com.qcobjects.timing", [
           /* @__PURE__ */ __name(class Timer extends ClassFactory("InheritClass") {
             constructor() {
               super(...arguments);
@@ -8348,7 +8348,7 @@ var require_QCObjects = __commonJS({
             }
           }, "Timer")
         ]);
-        Package2("com.qcobjects.tools.essentials", [
+        Package3("com.qcobjects.tools.essentials", [
           /* @__PURE__ */ __name(class Toggle extends ClassFactory("InheritClass") {
             constructor() {
               super(...arguments);
@@ -8488,7 +8488,7 @@ var require_QCObjects = __commonJS({
         });
         Export(Export);
         Export(Import2);
-        Export(Package2);
+        Export(Package3);
         Export(Class);
         Export(New);
         Export(Tag);
@@ -8497,7 +8497,7 @@ var require_QCObjects = __commonJS({
         Export(isBrowser);
         Export(_methods_);
         (function(_top2) {
-          Package2("com.qcobjects", [
+          Package3("com.qcobjects", [
             /* @__PURE__ */ __name(class GlobalSettings2 extends ClassFactory("InheritClass") {
               constructor() {
                 super(...arguments);
@@ -8607,7 +8607,7 @@ var require_QCObjects = __commonJS({
             },
             get() {
               return _top2.PackagesNameList.map(function(packagename) {
-                let _classesList = Package2(packagename);
+                let _classesList = Package3(packagename);
                 let _ret_;
                 if (_classesList) {
                   _ret_ = {
@@ -8789,6 +8789,7 @@ var require_QCObjects = __commonJS({
 
 // node_modules/qcobjects/src/index.mjs
 var import_QCObjects = __toESM(require_QCObjects(), 1);
+var src_default = import_QCObjects.default;
 
 // src/jsx/components/nav.jsx
 var Nav2 = class extends Component {
@@ -8815,6 +8816,21 @@ var Nav2 = class extends Component {
 };
 __name(Nav2, "Nav");
 Package("com.qcobjects.components", [Nav2]);
+
+// src/jsx/components/mainTransitionEffect.ts
+var { Package: Package2, TransitionEffect } = src_default;
+var MainTransitionEffect = class extends TransitionEffect {
+  constructor() {
+    super(...arguments);
+    this.name = "main-transition-effect";
+    this.duration = 3e3;
+    this.effects = ["Fade"];
+  }
+};
+__name(MainTransitionEffect, "MainTransitionEffect");
+Package2("com.qcobjects.effects.transitions.main", [
+  MainTransitionEffect
+]);
 
 // src/jsx/init.jsx
 RegisterWidgets(
